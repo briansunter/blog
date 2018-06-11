@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head profile="http://www.w3.org/2005/10/profile">
+        <meta charset="UTF-8">
+        <meta name="description" content="The Personal blog and musings of Brian Sunter, a designer, developer and future opsimath.">
+        <meta name="author" content="Brian Sunter">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>Brian Sunter's FP</title>
+        <link rel="alternative" type="application/rss+xml" title="Brian Sunter RSS Feed" href="/feed" />
+        <link rel="icon" type="image/png" href="/images/favicon.png">
+        <link rel="stylesheet" href="/css/style.css">
+        {{>templates/include.html}}
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                {{#info}}
+                {{>templates/header.html}}
+                {{/info}}
+            </header>
+            <div class="home-section">
+                <h1> Blog </h1>
+                    {{>templates/item-list.html}}
+            </div>
+            <div class="home-section">
+                <h1> Fragments </h1>
+                    {{>templates/item-list.html}}
+            </div>
+            <div class="home-section">
+                <h1> Projects </h1>
+                    {{>templates/item-list.html}}
+            </div>
+            <div class="home-section">
+                <h1> Work </h1>
+                    {{>templates/item-list.html}}
+            </div>
+            <div class="home-section">
+                <h1> Photos </h1>
+                    {{>templates/item-list.html}}
+            </div>
+            <footer>
+                &copy; 2014 Brian Sunter - <a href="/rss.xml">RSS</a>
+            </footer>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,6 @@
+- patterns:
+  - site/*
+  - ^blog.cabal$
+  - ^stack.yam$
+  commands:
+  - stack exec build-site

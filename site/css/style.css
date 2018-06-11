@@ -1,0 +1,245 @@
+/* CSS Reset */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, abbr, acronym, em, img, ol, ul, li {
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0; }
+
+html {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+p , li {
+    font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+    p , li {
+        font-size: 2em;
+    }
+}
+
+.masthead  >  span {
+    font-size: 2em;
+}
+
+@media screen and (min-width: 50em){
+    p { font-size: 2em;}
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; }
+
+
+
+/* .page { */
+/*     display: grid; */
+/*     grid-template-columns:  200px 1fr 200px ; */
+/*     grid-row-gap: 2rem; */
+/* } */
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page > * {
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .page {
+        display: grid;
+        grid-template-columns: 1fr 1040px 1fr;
+
+    }
+    .page > * {
+        grid-column: 2 ;
+        padding: 40px;
+    }
+}
+
+h2 {
+    font-family: Lucida Grande;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+.home-section > h1 {
+    font-size: 2em;
+}
+
+
+.header > h1 {
+    font-size: 3em;
+}
+
+.post > h1 {
+    font-style: bold;
+    font-size: 2em;
+    margin-bottom:20px;
+    margin-top:60px;
+}
+
+@media (min-width: 768px) {
+    .home-section > h1 {
+        font-size: 9em;
+    }
+
+    .header > h1 {
+        font-size: 9em;
+    }
+    .post > h1 {
+        font-size: 7em;
+        margin-bottom:20px;
+        margin-top:60px;
+    }
+}
+
+
+
+
+.social-profiles {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.social-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100pt;
+    height: 100pt;
+    font-color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.social-profile a:visited {
+    color: black;
+}
+
+.social-profile a:link{
+    color: black;
+}
+
+.social-profile a:hover{
+    color: #004225;
+}
+
+.social-profile a {
+    font-size: 1em;
+}
+
+.social-profile .fab {
+    font-size: 2em;
+}
+
+@media (min-width: 768px) {
+.social-profile a {
+    font-size: 2em;
+}
+
+.social-profile .fab {
+    font-size: 3em;
+}
+}
+.item-list {
+}
+
+
+.list-item {
+    margin-bottom: 1em;
+}
+
+.list-item > * > h2{
+    font-size: 2em;
+    margin-bottom: .2em;
+}
+@media (min-width: 768px) {
+    .list-item {
+        margin-bottom: 1em;
+    }
+
+    .list-item > * > h2{
+        font-size: 4em;
+        margin-bottom: .2em;
+    }
+}
+
+/* article > p { */
+/*     --x-height-multiplier: 0.375; */
+/*     --baseline-multiplier: 0.17; */
+/*     font-family: Georgia,Cambria,"Times New Roman",Times,serif; */
+/*     letter-spacing: .01rem; */
+/*     font-weight: 400; */
+/*     font-style: normal; */
+/*     font-size: 21px; */
+/*     line-height: 1.58; */
+/*     letter-spacing: -.003em; */
+/*     color: rgba(0,0,0,.84); */
+/*     text-rendering: optimizeLegibility; */
+/*     -webkit-font-smoothing: antialiased; */
+/* } */
+
+article > .aside {
+    font-family: Lucida Grande;
+    margin: 30px 20px;
+    color: #666;
+    font-size: 0.8em;
+}
+
+img {
+    width: 100%;
+}
+
+.line-numbers a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 1em;
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+    font-size: 1em;
+    font-family: 'FiraCode', monospace;
+}
+
+@media (min-width: 768px) {
+code {
+    background: #eee;
+    padding: 2px 5px;
+    font-size: 1.5em;
+    font-family: 'FiraCode', monospace;
+}
+}
+pre {
+    background: #eee;
+    padding: 10px 15px;
+    overflow: auto;
+}
+
+pre > code {
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+figure figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.8em;
+}

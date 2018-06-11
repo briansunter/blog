@@ -1,0 +1,28 @@
+name:                blog
+version:             1.0.0
+description:         A simple blog using SitePipe
+homepage:            https://github.com/briansunter/blog
+license:             BSD3
+author:              Brian Sunter
+maintainer:          public@briansunter.com
+copyright:           2017 Brian Sunter
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+executable build-site
+  hs-source-dirs:      app
+  other-modules:       Reader
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , sitepipe >= 0.1.1
+                     , containers
+                     , yaml
+                     , exceptions
+                     , bytestring
+                     , unordered-containers
+                     , mustache
+                     , text
+  default-language:    Haskell2010

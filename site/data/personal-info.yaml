@@ -1,0 +1,29 @@
+title: Brian Sunter
+site: bsun.io
+photo-site: photos.bsun.io
+description: "My name is Brian Sunter and I'm a software Engineer in San Francisco."
+social-profiles:
+- name: Github
+  link: https://github.com/briansunter
+  fa-icon: fa-github-square
+- name: LinkedIn
+  link: https://www.linkedin.com/in/brian-sunter-9853a649/
+  fa-icon: fa-linkedin
+- name: Twitter
+  link: https://twitter.com/bsunter
+  fa-icon: fa-twitter
+- name: Instagram
+  link: https://instagram.com/bsunter
+  fa-icon: fa-instagram
+- name: Keybase
+  link: https://keybase.io/bsunter
+  fa-icon: fa-keybase
+# - name: YouTube
+#   link: https://www.youtube.com/user/bsunter
+#   fa-icon: fa-youtube
+# - name: Facebook
+#   link: https://www.facebook.com/briansunterblog
+#   fa-icon: fa-facebook
+# - name: Bitcoin
+#   link: "1FW5D3hCmHGJcEm5eeEx85AYeUtxrJjs2T"
+#   fa-icon: fa-github-square
