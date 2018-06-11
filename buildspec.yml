@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - curl -sSL https://get.haskellstack.org/ | sh
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - stack build
+  post_build:
+    commands:
+      - stack-exec build-site
+artifacts:
+  files:
+    - dist/
