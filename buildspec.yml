@@ -9,11 +9,10 @@ phases:
     commands:
       - echo "no pre"
   build:
-    # commands:
-    #   # - stack build
+    commands:
+      - echo "no build"
   post_build:
     commands:
-      # - stack exec build-site
       - aws s3 sync dist/ "s3://${BUCKET_NAME}" --acl=public-read --delete
       - aws cloudfront create-invalidation --distribution-id "${DISTRIBUTION_ID}" --paths *
 artifacts:
