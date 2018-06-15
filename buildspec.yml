@@ -21,4 +21,5 @@ artifacts:
 
 cache:
   paths:
+    - '.stack-work/**/*'
     - '/root/.stack/**/*'
