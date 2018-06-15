@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: build-site
+    volumes:
+     - .:/opt/myapp
