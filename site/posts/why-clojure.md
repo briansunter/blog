@@ -4,7 +4,7 @@ tags:
 - "blog"
 - "index-page"
 title: "Why Clojure?"
-description:  "Why would someone want to use a different programming language than the one they're already using? Why not node.language-js?"
+description:  "Why would someone want to use a different programming language than the one they're already using? Why not node.js?"
 ---
 
 <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css" />
